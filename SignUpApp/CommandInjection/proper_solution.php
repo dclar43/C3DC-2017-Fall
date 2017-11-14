@@ -30,7 +30,7 @@ $ldap = new Ldap($ldap_options);
 // <editor-fold desc="User creation">
 
 // Mock user input. This would usually come from $_GET or $_POST
-$username = '*)(sAMAccountName=*))(|(sAMAccountName=*';
+$username = '*)(sAMAccountName=*))(|(sAMAccountName=*'; // This is an LDAP injection attempt
 $password = 'password';
 $address  = 'address';
 $phone    = 'phone';
